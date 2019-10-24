@@ -30,6 +30,8 @@ namespace FloatingPointPlayground
         {
             InitializeComponent();
             Update();
+            txtFloat.CaretIndex = 1;
+            txtFloat.Focus();
         }
 
         private void Update()
@@ -42,6 +44,7 @@ namespace FloatingPointPlayground
             txtInt.Text = bin.ToString();
             txtIntHex.Text = "0x" + bin.ToString("X8");
             disableTextChangedEvent = true;
+            VisualStateManager.GoToElementState(layoutRoot, "Default", true);
             txtFloat.Text = BitConverter.ToSingle(BitConverter.GetBytes(bin), 0).ToString();
             disableTextChangedEvent = false;
         }
