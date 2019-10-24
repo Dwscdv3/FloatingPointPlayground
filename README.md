@@ -1,6 +1,6 @@
 # Floating-Point Playground
 
-A more intuitive way to experiment with how floating-point numbers represent.
+A more intuitive way to experiment with how floating-point numbers are represented.
 
 _Currently supports single-precision (32-bit) only._
 
