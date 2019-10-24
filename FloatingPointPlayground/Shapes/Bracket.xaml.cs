@@ -15,9 +15,15 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-using System.Windows;
+using System.Windows.Controls;
 
-namespace FloatingPointPlayground
+namespace FloatingPointPlayground.Shapes
 {
-    public partial class App : Application { }
+    public partial class Bracket : UserControl
+    {
+        public Bracket()
+        {
+            InitializeComponent();
+        }
+    }
 }
